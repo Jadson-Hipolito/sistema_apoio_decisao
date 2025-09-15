@@ -12,7 +12,8 @@ model += x + y, "sessões_totais"
 
 # Restrições
 model += 3 * x + 2 * y <= 70, "Gasto_maximo"  # valor total
-model += 2 * x + 2 * y >= 18, "Tempo_maximo"  # tempo disponivel
+model += 2 * x + 2 * y <= 18, "Tempo_maximo"  # tempo disponivel
+model += 1500 * x + 1000 * y <= 80000, "Calorias_maximas" # calorias disponiveis
 
 # Resolver o problema
 model.solve()
