@@ -1,7 +1,7 @@
 from pulp import LpMaximize, LpProblem, LpVariable, value
 
 # Criar o problema de otimização
-model = LpProblem(name="otimizacao-bolos", sense=LpMaximize)
+model = LpProblem(name="otimizacao-chapeus", sense=LpMaximize)
 
 # Variáveis de decisão
 x = LpVariable(name="cowboy americano", lowBound=0, upBound=150, cat='Integer')  # CA
